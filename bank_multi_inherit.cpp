@@ -66,11 +66,12 @@ class borrow:public deposit
 };
 int main()
 {
-        borrow *b1;
+       
         int n,i;
         cout<<"\n Enter No. of Customer Details You Want  :  ";
         cin>>n;
-        b1=new borrow[n];
+	borrow b1[n];
+        //b1=new borrow[n];
         for(i=0; i<n; i++)
         {
                 b1[i].acceptc();

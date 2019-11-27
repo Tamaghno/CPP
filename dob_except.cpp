@@ -8,6 +8,10 @@ int main()
 string dob;
 cout<<"enter D.O.B : "<<endl;
 cin>>dob;
+char ch='9';
+int x=ch-'0';
+if(x==9)
+cout<<"integer : "<<x;
 //cout<<dob.length();
 try{
         if(dob.length()!=10)

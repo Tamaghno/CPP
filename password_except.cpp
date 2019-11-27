@@ -1,6 +1,8 @@
 #include<iostream>
 #include<string.h>
 #include<cctype>
+#include<ctype.h>
+#include<cstring>
 using namespace std;
 
 int main()
@@ -16,7 +18,8 @@ int main()
        bool dig=false;
        bool alpha=false;
        bool spc=false;
-       for(i=0;i<pass.length();i++)
+       unsigned int l=strlen(pass);
+       for(i=0;i<l;i++)
        {
            if(isdigit(pass[i]))
            dig=true;
